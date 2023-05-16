@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMeja">
+
+    <ImageButton
+        android:id="@+id/update_table_ib_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_back"
+        android:backgroundTint="@color/primary"
+        android:layout_marginTop="@dimen/empat_dua"
+        android:layout_marginStart="@dimen/dua_empat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/update_table_tv_title"
+        style="@style/TextFormTitle"
+        android:layout_marginTop="@dimen/empat_puluh"
+        android:text="@string/update_meja"
+        android:textColor="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/update_table_tv_no"
+        style="@style/TextForm"
+        android:layout_marginTop="@dimen/empat_delapan"
+        android:text="@string/no_meja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_table_ib_back" />
+
+    <EditText
+        android:id="@+id/update_table_et_no"
+        style="@style/TextFormInput"
+        android:inputType="text"
+        android:autofillHints=""
+        tools:imeOptions="actionNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_table_tv_no"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/update_table_btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lima_enam"
+        android:layout_marginStart="@dimen/dua_empat"
+        android:layout_marginEnd="@dimen/dua_empat"
+        android:backgroundTint="@color/primary"
+        android:layout_marginTop="@dimen/empat_delapan"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_table_et_no" />
+</androidx.constraintlayout.widget.ConstraintLayout>
